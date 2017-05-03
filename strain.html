@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>菌株</title>
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		<link rel="shortcut icon" href="img/favicon.ico">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<link rel="stylesheet" href="css/sm.min.css">
+		<link rel="stylesheet" href="css/sm-extend.min.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		
+	</head>
+
+	<body>
+		<div class="page-group">
+			<div class="page">
+				<header class="bar bar-nav">
+					<h1 class="title"></h1>
+					<form class="fh-search" action="search.html">
+						<input type="text" name="query" value="" placeholder="请输入产品名称或编号" />
+						<input type="submit" value="" class="btn-submit"/>
+					</form>
+				</header>
+				
+				<!--高亮页卡在A标签上加 active 类名-->
+				<div class="bar bar-header-secondary">
+					<div class="buttons-tab">
+						<a href="index.html" class="button">首页</a>
+						<a href="cdna.html" class="button">cDNA克隆</a>
+						<a href="orf.html" class="button">ORF克隆</a>
+						<a href="carrier.html" class="button">载体</a>
+						<a href="strain.html" class="button active">菌株</a>
+						<a href="cell.html" class="button">细胞</a>
+					</div>
+				</div>
+
+				<!--高亮菜单在A标签上加 active 类名-->
+				<nav class="bar bar-tab fh-bar">
+					<a class="tab-item" href="aboutus.html">
+						<span class="icon icon-home"></span>
+						<span class="tab-label">关于我们</span>
+					</a>
+					<a class="tab-item" href="person.html">
+						<span class="icon icon-me"></span>
+						<span class="tab-label">会员中心</span>
+					</a>
+					<a class="tab-item" href="tel://400-000-7085">
+						<span class="icon icon-phone"></span>
+						<span class="tab-label">电话咨询</span>
+					</a>
+					<a class="tab-item" href="order.html">
+						<span class="icon icon-card"></span>
+						<span class="tab-label">订购指南</span>
+					</a>
+				</nav>
+				
+				<div class="content">
+					<!-- 这里是页面内容区 -->
+					<img src="img/strain_banner.jpg"/>
+					<h2 class="title-label"> 首页 > <span>菌株</span></h2>
+					<div class="content-padded">
+						
+						<div class="m-screen">
+							<select name="">
+								<option value="">菌株用途</option>
+								<option value="1">用途1</option>
+								<option value="2">用途2</option>
+								<option value="3">用途3</option>
+							</select>
+							<select name="">
+								<option value="">来源</option>
+								<option value="1">来源1</option>
+								<option value="2">来源2</option>
+								<option value="3">来源3</option>
+							</select>
+							<select name="">
+								<option value="">价格区间</option>
+								<option value="1">价格1</option>
+								<option value="2">价格2</option>
+								<option value="3">价格3</option>
+							</select>
+						</div>
+						
+						<div class="m-table">
+							<table border="" cellspacing="" cellpadding="">
+								<tbody>
+									<tr>
+										<th>产品货号</th>
+										<th>产品名称</th>
+										<th>出品公司</th>
+										<th>价格</th>
+										<th>周期</th>
+										<th>收藏</th>
+									</tr>
+									<tr>
+										<td>
+											<a href="detail.html" target="_blank">GC0071545</a>
+										</td>
+										<td> 名称1</td>
+										<td> 枯草芽孢杆菌表达载体</td>
+										<td>
+											<a target="_blank">询价</a>
+										</td>
+										<td>1周</td>
+										<!--收藏类名 like 已收藏加上类名 was-like-->
+										<td>
+											<a data-product_id="71545" class="like" href="javascript:void(0);">收藏</a>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<a href="detail.html" target="_blank">GC0071728</a>
+										</td>
+										<td> 名称2</td>
+										<td> 枯草芽孢杆菌表达载体</td>
+										<td>
+											<a target="_blank">询价</a>
+										</td>
+										<td>1周</td>
+										<!--收藏类名 like 已收藏加上类名 was-like-->
+										<td>
+											<a data-product_id="71728" class="like" href="javascript:void(0);">收藏</a>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<a href="detail.html" target="_blank">GC0071828</a>
+										</td>
+										<td> 名称3</td>
+										<td> 枯草芽孢杆菌表达载体</td>
+										<td>1200.00</td>
+										<td>1周</td>
+										<!--收藏类名 like 已收藏加上类名 was-like-->
+										<td>
+											<a data-product_id="71828" class="like" href="javascript:void(0);">收藏</a>
+										</td>
+									</tr>
+									
+									<tr>
+										<td>
+											<a href="detail.html" target="_blank">GC0072933</a>
+										</td>
+										<td> 名称4</td>
+										<td> 枯草芽孢杆菌表达载体</td>
+										<td>
+											<a target="_blank">询价</a>
+										</td>
+										<td>1周</td>
+										<!--收藏类名 like 已收藏加上类名 was-like-->
+										<td>
+											<a data-product_id="72933" class="like" href="javascript:void(0);">收藏</a>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<a href="detail.html" target="_blank">GC0073236</a>
+										</td>
+										<td> 名称5</td>
+										<td> 枯草芽孢杆菌表达载体</td>
+										<td>1200.00</td>
+										<td>1周</td>
+										<!--收藏类名 like 已收藏加上类名 was-like-->
+										<td>
+											<a data-product_id="73236" class="like" href="javascript:void(0);">收藏</a>
+										</td>
+									</tr>
+									
+								</tbody>
+							</table>
+							<!--分页器-->
+							<ul class="pagination">
+								<li class="disabled prev">
+									<a>上一页</a>
+								</li>
+								<li class="active">
+									<a>1</a>
+								</li>
+								<li>
+									<a href="/search/type/dna/keyword/123.html?page=2">2</a>
+								</li>
+								<li>
+									<a href="/search/type/dna/keyword/123.html?page=3">3</a>
+								</li>
+								<li class="next">
+									<a href="/search/type/dna/keyword/123.html?page=2">下一页</a>
+								</li>
+								<li class="next">
+									<a>1/29</a>
+								</li>
+							</ul>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script type='text/javascript' src='js/zepto.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='js/sm.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='js/sm-extend.min.js' charset='utf-8'></script>
+		<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

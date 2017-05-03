@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>cDNA克隆</title>
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		<link rel="shortcut icon" href="img/favicon.ico">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<link rel="stylesheet" href="css/sm.min.css">
+		<link rel="stylesheet" href="css/sm-extend.min.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		
+	</head>
+
+	<body>
+		<div class="page-group">
+			<div class="page">
+				<header class="bar bar-nav">
+					<h1 class="title"></h1>
+					<form class="fh-search" action="search.html">
+						<input type="text" name="query" value="" placeholder="请输入产品名称或编号" />
+						<input type="submit" value="" class="btn-submit"/>
+					</form>
+				</header>
+				
+				<!--高亮页卡在A标签上加 active 类名-->
+				<div class="bar bar-header-secondary">
+					<div class="buttons-tab">
+						<a href="index.html" class="button">首页</a>
+						<a href="cdna.html" class="button active">cDNA克隆</a>
+						<a href="orf.html" class="button">ORF克隆</a>
+						<a href="carrier.html" class="button">载体</a>
+						<a href="strain.html" class="button">菌株</a>
+						<a href="cell.html" class="button">细胞</a>
+					</div>
+				</div>
+
+				<!--高亮菜单在A标签上加 active 类名-->
+				<nav class="bar bar-tab fh-bar">
+					<a class="tab-item" href="aboutus.html">
+						<span class="icon icon-home"></span>
+						<span class="tab-label">关于我们</span>
+					</a>
+					<a class="tab-item" href="person.html">
+						<span class="icon icon-me"></span>
+						<span class="tab-label">会员中心</span>
+					</a>
+					<a class="tab-item" href="tel://400-000-7085">
+						<span class="icon icon-phone"></span>
+						<span class="tab-label">电话咨询</span>
+					</a>
+					<a class="tab-item" href="order.html">
+						<span class="icon icon-card"></span>
+						<span class="tab-label">订购指南</span>
+					</a>
+				</nav>
+				
+				<div class="content">
+					<!-- 这里是页面内容区 -->
+					<img src="img/cnda_banner.jpg"/>
+					<h2 class="title-label"> 首页 > <span>cDNA克隆</span></h2>
+					<div class="content-padded">
+						<p>
+							丰晖生物拥有人、小鼠、大鼠等多个物种约10万 个cDNA 克隆，是当前数量最多、最完备的基因库。为了方便科研人员的搜索与查询，我们尽可能对这些AcDNA 克隆进行描述，包括NCBI序列号、别名、CDS区、氨基酸序列及克隆载体等，旨在为客户提供最优质、最快捷的服务!
+						</p>
+						<h3>丰晖全长cDNA克隆特点:</h3>
+						<p class="arr-r">涵盖人(33,000)、小鼠(25,000)、大鼠(15,000)等多个种属</p>
+				       	<p class="arr-r">绝大部分cDNA克隆都经过完全测序，可提供详细测序报告；</p>
+				       	<p class="arr-r">源于高质量的cDNA文库，外源片段插入区为全长转录本</p>
+				       	<p class="arr-r">保证ORF区序列的准确性</p>
+				       	<p class="arr-r">所有cDNA克隆的基因全为NCBI标准</p>
+				       	
+				       	<div class="search-box">
+							<div class="w20">
+								<img src="img/cdna_img.png">
+							</div>
+							<div class="w75">
+								<h4>cDNA克隆产品搜索</h4>
+								<p>输入基因名称， Genebank编号，产品编号搜索</p>
+								
+								<div class="search">
+									<form class="fh-search" onsubmit="return checkKeywowrd()" action="/dna.html" method="get" target="_blank">
+										<input type="text" id="keyword" name="keyword" placeholder="请输入cdna产品编号">
+										<input class="btn-submit" value="搜索" type="submit">
+									</form>
+								</div>
+							</div>
+							
+						</div>
+				       	<label class="l-blue">cDNA克隆按字母索引</label>
+						<div class="letter-index">
+							<a href="list.html">A</a><a href="list.html">B</a><a href="list.html" class="active">C</a><a href="list.html">D</a><a href="list.html">E</a><a href="list.html">F</a><a href="list.html">G</a>
+							<a href="list.html">H</a><a href="list.html">I</a><a href="list.html">J</a><a href="list.html">K</a><a href="list.html">L</a><a href="list.html">M</a><a href="list.html">N</a>
+							<a href="list.html">O</a><a href="list.html">P</a><a href="list.html">Q</a><a href="list.html">R</a><a href="list.html">S</a><a href="list.html">T</a>
+							<a href="list.html">U</a><a href="list.html">V</a><a href="list.html">W</a><a href="list.html">X</a><a href="list.html">Y</a><a href="list.html">Z</a>
+							
+							<!--	临时注释
+								<a href="/dna/alpha/A.html">A</a><a href="/dna/alpha/B.html">B</a><a href="/dna/alpha/C.html">C</a><a href="/dna/alpha/D.html">D</a><a href="/dna/alpha/E.html">E</a><a href="/dna/alpha/F.html">F</a><a href="/dna/alpha/G.html">G</a>
+								<a href="/dna/alpha/H.html">H</a><a href="/dna/alpha/I.html">I</a><a href="/dna/alpha/J.html">J</a><a href="/dna/alpha/K.html">K</a><a href="/dna/alpha/L.html">L</a><a href="/dna/alpha/M.html">M</a><a href="/dna/alpha/N.html">N</a>
+								<a href="/dna/alpha/O.html">O</a><a href="/dna/alpha/P.html">P</a><a href="/dna/alpha/Q.html">Q</a><a href="/dna/alpha/R.html">R</a><a href="/dna/alpha/S.html">S</a><a href="/dna/alpha/T.html">T</a>
+								<a href="/dna/alpha/U.html">U</a><a href="/dna/alpha/V.html">V</a><a href="/dna/alpha/W.html">W</a><a href="/dna/alpha/X.html">X</a><a href="/dna/alpha/Y.html">Y</a><a href="/dna/alpha/Z.html">Z</a>
+							-->
+						</div>
+						<div style="height: 1.5rem;"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script type='text/javascript' src='js/zepto.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='js/sm.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='js/sm-extend.min.js' charset='utf-8'></script>
+		<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>
