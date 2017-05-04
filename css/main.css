@@ -88,8 +88,9 @@ header.bar-nav .title {
 .fh-bar{
 	background: #1159ab;
 }
-.fh-bar .icon{
-	width: 1.2rem;
+.fh-bar .tab-item .icon{
+	width: 1rem;
+	height: 1rem;
 	padding: 0;
 	background-size: 100%;
 }
@@ -358,12 +359,14 @@ p.arr-r{
 	background-size: 0.2rem;
 	background-position: 0 0.25rem;
 	font-size: .5rem;
+	background-position: 0 0.4rem;
 }
 
 .content-padded .m-table table{
 	width: 100%;
 	font-size: 0.45rem;
-	color: #333;
+	color: #666;
+    border: solid 1px #f0f0f0;
 }
 .m-table td{
 	text-align: center;	
@@ -385,16 +388,17 @@ p.arr-r{
 }
 
 .pagination li{
-	    display: block;
+	display: block;
     float: left;
     margin-right: 0.2rem;
     line-height: 2rem;
     box-sizing: content-box;
-    border: 1px solid #c9c9c9;
+    border: 1px solid #f0f0f0;
 }
 .pagination a{
 	display: block;
     padding: 0 0.5rem;
+    color: #666;
 }
 .pagination .active,
 .pagination li:hover{
@@ -408,7 +412,7 @@ p.arr-r{
 }
 .pagination .prev,
 .pagination .next{
-	background-color: #dcdcdc;
+    background-color: #ebebeb;
 }
 
 p {
@@ -549,7 +553,8 @@ br {
 .card-list .item-title {
 	padding-left: 0.3rem;
     font-weight: bold;
-    font-size: 0.8rem;
+    font-size: 0.65rem;
+    color: #333;
 }
 
 .card-list .item-subtitle {
@@ -561,6 +566,7 @@ br {
 	padding: 0.2rem 0.3rem;
 	font-size: 0.6rem;
 	text-indent: 0;
+    color: #666;
 }
 
 .content-padded .title-label {
@@ -635,6 +641,7 @@ br {
 .content-padded p{
 	text-indent: 0em!important;
 	font-size: .5rem;
+    line-height: 1rem;
 }
 
 /* 2017-05-1 freeman Add */
@@ -715,21 +722,34 @@ header.bar-nav{
 	overflow: hidden;
 }
 .letter-index a{
-    width: 1.2rem;
-    height: 1.2rem;
+    width: 10%;
+    height: 1.5rem;
     display: block;
     float: left;
     margin-top: 0.8rem;
-    margin-right: 0.8rem;
+    margin-right: 5%;
     text-align: center;
-    line-height: 1.2rem;
+    line-height: 1.5rem;
     background: #b5b5b5;
     color: #fff;
     border-radius: 3px;
     cursor: pointer;
     font-size: 0.6rem;
 }
-
+.letter-index a:nth-child(7n){
+	margin-right: 0;
+}
+/*.letter-index a:nth-child(20),
+.letter-index a:nth-child(26){
+	margin-right: 0;
+}
+.letter-index a:nth-child(21){
+	margin-right: 5%;
+}
+.letter-index a:nth-child(17),
+.letter-index a:nth-child(23){
+	margin-right: 20%;
+}*/
 
 .letter-index .active,
 .letter-index a:hover{
@@ -887,9 +907,35 @@ table + .t-label{
 	background: gray;
 }
 .list-block{
-    margin: 1rem 0;
+    margin: 0 0 1rem;
 }
 .m-table{
 	width: 100%;
 	overflow-x: scroll;
+}
+
+.red{
+	color: #f00;
+	padding-right: .3rem;
+}
+.list-block .item-title.label{
+    width: 25%;
+}
+.f-l{
+	float: left;
+	
+}
+.f-r{
+	float: right;
+}
+.form-info{
+	overflow: hidden;
+    font-size: .7rem;
+    line-height: 2rem;
+    height: 2rem;
+    padding: 0 1rem;
+    color: #666666;
+}
+.form-info .active{
+	color: #1258ad;
 }
